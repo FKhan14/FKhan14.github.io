@@ -1,6 +1,3 @@
-/* ── Google Fonts are loaded in the HTML <head> ── */
-
-/* ── CSS Variables: our color scheme lives here ── */
 :root {
   --navy:   #0d1b2a;
   --mid:    #1b2d3f;
@@ -10,7 +7,6 @@
   --muted:  #8a9bb0;
 }
 
-/* ── Reset & base ── */
 * {
   margin: 0;
   padding: 0;
@@ -20,12 +16,10 @@
 body {
   background-color: var(--navy);
   color: var(--light);
-  /* Custom font #1: Inter for body text */
   font-family: 'Inter', sans-serif;
   line-height: 1.7;
 }
 
-/* ── Navigation ── */
 nav {
   background-color: var(--mid);
   padding: 16px 40px;
@@ -44,7 +38,6 @@ nav {
 }
 
 .nav-logo {
-  /* Custom font #2: Playfair Display for the logo/name */
   font-family: 'Playfair Display', serif;
   font-size: 1.3rem;
   color: var(--white);
@@ -67,19 +60,16 @@ nav a:hover {
   color: var(--accent);
 }
 
-/* ── Main content: centered with max-width (Custom layout #3) ── */
 main {
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 24px;
 }
 
-/* ── Sections: spaced out cleanly ── */
 section {
   margin-bottom: 64px;
 }
 
-/* ── Hero ── */
 .hero {
   padding: 60px 0 20px;
   border-bottom: 1px solid var(--mid);
@@ -98,7 +88,6 @@ section {
   font-size: 1.1rem;
 }
 
-/* ── Headings ── */
 h2 {
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
@@ -117,7 +106,6 @@ p {
   margin-bottom: 16px;
 }
 
-/* ── Skill cards ── */
 .skill-grid {
   display: flex;
   gap: 20px;
@@ -133,7 +121,6 @@ p {
   min-width: 200px;
 }
 
-/* ── Contact links ── */
 .contact-links {
   list-style: none;
   display: flex;
@@ -152,7 +139,6 @@ p {
   text-decoration: underline;
 }
 
-/* ── Footer ── */
 footer {
   text-align: center;
   padding: 24px;
