@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects – Fahd Khan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-logo">Fahd Khan</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h2>Projects</h2>
+      <p class="tagline">A selection of things I've built across ML, data engineering, and full-stack development.</p>
+    </section>
+
+    <section class="project">
+      <h3>GitHub Talent Scout</h3>
+      <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=800&q=80" alt="GitHub Talent Scout" class="project-img"/>
+      <p>
+        Developer sourcing is notoriously inefficient — recruiters spend hours manually reviewing profiles
+        with little signal on actual code quality. GitHub Talent Scout tackles this by building a talent
+        matching system that analyzes real developer activity and code quality metrics rather than just
+        keywords on a resume.
+      </p>
+      <p>
+        The system analyzes 927 GitHub profiles and draws insights from 289 real codebases using a custom
+        Random Forest and Neural Network pipeline. On the backend, I built a full-stack search platform
+        using PostgreSQL with pgvector, enabling sub-100ms semantic similarity search across
+        384-dimensional embeddings via a FastAPI backend.
+      </p>
+      <h3>Key Technologies</h3>
+      <ul class="project-list">
+        <li>Random Forest & Neural Network (custom implementation)</li>
+        <li>PostgreSQL + pgvector for semantic search</li>
+        <li>FastAPI backend</li>
+        <li>384-dimensional embeddings</li>
+      </ul>
+      <a href="https://github.com/FKhan14" class="project-link" target="_blank">View on GitHub →</a>
+    </section>
+
+    <section class="project">
+      <h3>Tech Salary Prediction Model</h3>
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Salary Prediction" class="project-img"/>
+      <p>
+        Salary transparency is a persistent problem in the tech industry — candidates often enter
+        negotiations without reliable data on what their skills are worth. This project builds an
+        end-to-end regression pipeline to predict tech salaries with high accuracy.
+      </p>
+      <p>
+        Using NumPy, Scikit-learn, and Pandas, I implemented a full data preprocessing and feature
+        engineering pipeline that achieved an R² of 0.85 and a mean absolute error of approximately
+        $8K — meaning predictions are typically within $8,000 of actual salaries.
+      </p>
+      <h3>Key Technologies</h3>
+      <ul class="project-list">
+        <li>Python (NumPy, Pandas, Scikit-learn)</li>
+        <li>Feature engineering & preprocessing</li>
+        <li>Linear regression pipeline</li>
+        <li>R² = 0.85, MAE ≈ $8K</li>
+      </ul>
+      <a href="https://github.com/FKhan14" class="project-link" target="_blank">View on GitHub →</a>
+    </section>
+
+    <section class="project">
+      <h3>MedTap</h3>
+      <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80" alt="MedTap" class="project-img"/>
+      <p>
+        Low-income clinics often lack access to fast, reliable medical reference tools. MedTap is an
+        open-source medical retrieval-augmented generation (RAG) system designed to fill that gap,
+        giving clinicians quick access to drug interaction data and medical literature.
+      </p>
+      <p>
+        The system integrates data from openFDA, PubMed, and DrugBank across 51 drugs and 328 validated
+        drug interactions. I built the full pipeline from data collection through PubMedBERT embeddings
+        and pgvector retrieval to a Streamlit web interface, achieving a Precision@15 of 0.69 on a
+        13-question held-out evaluation set.
+      </p>
+      <h3>Key Technologies</h3>
+      <ul class="project-list">
+        <li>PubMedBERT embeddings + pgvector retrieval</li>
+        <li>openFDA, PubMed, DrugBank data sources</li>
+        <li>Streamlit web interface</li>
+        <li>RAG pipeline (end-to-end)</li>
+      </ul>
+      <a href="https://github.com/FKhan14" class="project-link" target="_blank">View on GitHub →</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Fahd Khan</p>
+  </footer>
+
+</body>
+</html>
