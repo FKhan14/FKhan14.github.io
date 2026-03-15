@@ -1,0 +1,162 @@
+/* ── Google Fonts are loaded in the HTML <head> ── */
+
+/* ── CSS Variables: our color scheme lives here ── */
+:root {
+  --navy:   #0d1b2a;
+  --mid:    #1b2d3f;
+  --accent: #4a90d9;
+  --light:  #e8f0f7;
+  --white:  #ffffff;
+  --muted:  #8a9bb0;
+}
+
+/* ── Reset & base ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--navy);
+  color: var(--light);
+  /* Custom font #1: Inter for body text */
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+}
+
+/* ── Navigation ── */
+nav {
+  background-color: var(--mid);
+  padding: 16px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--accent);
+}
+
+.nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  /* Custom font #2: Playfair Display for the logo/name */
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: var(--white);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* ── Main content: centered with max-width (Custom layout #3) ── */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* ── Sections: spaced out cleanly ── */
+section {
+  margin-bottom: 64px;
+}
+
+/* ── Hero ── */
+.hero {
+  padding: 60px 0 20px;
+  border-bottom: 1px solid var(--mid);
+  margin-bottom: 48px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.tagline {
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+/* ── Headings ── */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+p {
+  color: var(--light);
+  margin-bottom: 16px;
+}
+
+/* ── Skill cards ── */
+.skill-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background: var(--mid);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 20px 24px;
+  flex: 1;
+  min-width: 200px;
+}
+
+/* ── Contact links ── */
+.contact-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.contact-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--mid);
+}
